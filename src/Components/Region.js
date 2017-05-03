@@ -20,7 +20,6 @@ class Region extends Component{
             let objKey = Object.keys(region[r]);
             let objCities = region[r][objKey].cities;
             let objDescription = region[r][objKey].description;
-            console.log(region[r],objKey,region[r][objKey]);
             regionArray.push(
                 <div key={r} className="region-view">
                     <h3 className="region-name">{objKey}</h3>
