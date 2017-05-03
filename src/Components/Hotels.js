@@ -19,7 +19,7 @@ class Hotels extends Component{
         if(obj.length > 0) {
             for (h in hotels) {
                 hotelArray.push(
-                    <div key={h} className="hotel-block">
+                    <div key={h} className="hotel-card-block">
                         <HotelCard data={hotels[h]}/>
                     </div>
                 )
@@ -36,7 +36,7 @@ class Hotels extends Component{
         for (s in stars) {
             if(this.state.data.rating[stars[s]].length > 0) {
                 starArray.push(
-                    <div key={s}>
+                    <div className="hotel-view" key={s}>
                         <div className={`star-rating-header ${stars[s]}stars`} key={s}>{stars[s]} Stars</div>
                         <div className="hotels-corresponding" data-star-count={stars[s]}>
                             {this.state.data.rating[stars[s]].length > 0 ?

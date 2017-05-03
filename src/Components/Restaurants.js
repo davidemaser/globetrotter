@@ -13,20 +13,20 @@ class Restaurants extends Component{
     }
 
     static getRestaurantInformation(obj){
-        let hotels = obj;
+        let restaurants = obj;
         let h;
-        let hotelArray = [];
+        let restaurantArray = [];
         if(obj.length > 0) {
-            for (h in hotels) {
-                hotelArray.push(
-                    <div key={h} className="restaurant-block">
-                        <RestaurantCard data={hotels[h]}/>
+            for (h in restaurants) {
+                restaurantArray.push(
+                    <div key={h} className="restaurant-card-block">
+                        <RestaurantCard data={restaurants[h]}/>
                     </div>
                 )
             }
         }
 
-        return hotelArray;
+        return restaurantArray;
     }
 
     getRestaurantsByStars(){
@@ -36,7 +36,7 @@ class Restaurants extends Component{
         for (s in stars) {
             if(this.state.data.rating[stars[s]].length > 0) {
                 starArray.push(
-                    <div key={s}>
+                    <div className="restaurant-view" key={s}>
                         <div className={`star-rating-header ${stars[s]}stars`} key={s}>{stars[s]} Stars</div>
                         <div className="restaurants-corresponding" data-star-count={stars[s]}>
                             {this.state.data.rating[stars[s]].length > 0 ?
