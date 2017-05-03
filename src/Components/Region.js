@@ -13,23 +13,26 @@ class Region extends Component{
     }
 
     buildRegionLayout(){
-        let region = this.state.data;
+        let region =this.state.data;
+        let regionKeys =  Object.keys(region);
         let r;
         let regionArray = [];
-        for(r in region){
-            let objKey = Object.keys(region[r]);
-            let objCities = region[r][objKey].cities;
-            let objDescription = region[r][objKey].description;
+        for(r in regionKeys){
+            let objRoot = region[regionKeys[r]];
+            let objCities = region[regionKeys[r]].cities;
             regionArray.push(
                 <div key={r} className="region-view">
-                    <h3 className="region-name">{objKey}</h3>
-                    <p className="region-description">{objDescription}</p>
+                    <h3 className="region-name">{regionKeys[r]}</h3>
+                    <p className="region-description">{objRoot.description}</p>
                     <Cities data={objCities}/>
                 </div>
             )
+
         }
         return regionArray;
     }
+
+
 
     render(){
         return(

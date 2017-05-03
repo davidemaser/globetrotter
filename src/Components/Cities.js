@@ -16,14 +16,19 @@ class Cities extends Component{
         let cities = this.state.data;
         let c;
         let cityArray = [];
-        for(c in cities){
-            cityArray.push(
-                <div key={c} className="city-view">
-                    <div className="city-name">{cities[c].name}</div>
-                    <div className="city-description">{cities[c].description}</div>
-                    <Hotels data={cities[c].hotels}/>
-                </div>
-            )
+        if(cities !== undefined) {
+            for (c in cities) {
+                cityArray.push(
+                    <div key={c} className="city-view">
+                        <div className="city-name">{c}</div>
+                        <div className="city-description">{cities[c].description}</div>
+                        {cities[c].hotels !== undefined ?
+                            <Hotels data={cities[c].hotels}/> :
+                            ''
+                        }
+                    </div>
+                )
+            }
         }
 
         return cityArray;

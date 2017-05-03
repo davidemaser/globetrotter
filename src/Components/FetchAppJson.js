@@ -33,7 +33,6 @@ class FetchData extends Component{
                             return <Loading background="rgba(0, 0, 0, 0.85)" color="#fff" show={true} error={true} />
                         } else {
                             let data = result.body.GlobeTrotter[this.state.target];
-                            console.log(data);
                             return (
                                 <section id="list-view">
                                 <Countries data={data}/>

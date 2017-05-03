@@ -1,366 +1,361 @@
 {
-  "GlobeTrotter":{
-    "version":"0.1.1",
-    "validityRange":{
-      "start":"",
-      "end":""
+  "GlobeTrotter": {
+    "version": "0.1.1",
+    "validityRange": {
+      "start": "",
+      "end": ""
     },
-    "updated":"28/05/2017 8:58:00 EST",
-    "live":true,
-    "countries":{
-      "promote":["CA199044","JA098846"],
-      "country":[
-        {
-          "id":"CA199044",
-          "title":"Canada",
-          "description":"Land of the free",
-          "keywords":["nature"],
-          "country":"Canada",
-          "continent":"North America",
-          "mapping":{
-            "long":"",
-            "lat":"",
-            "zoom":""
-          },
-          "reference":{
-            "wikipedia":""
-          },
-          "images":[
-            {
-              "url":"",
-              "alt":"",
-              "default":true
-            }
-          ],
-          "videos":[
-            {
-              "url":"",
-              "format":"",
-              "playhead":{
-                "start":"",
-                "end":""
-              },
-              "default":true
-            }
-          ],
-          "region":[
-            {
-              "Ontario":{
-                "description":"The green province",
-                "cities":[
-                  {
-                    "cityID":"OT13354",
-                    "promote":false,
-                    "name":"Ottawa",
-                    "description":"Ottawa's most beautiful gem",
-                    "keywords":["capital"],
-                    "website":"",
-                    "mapping":{
-                      "long":"",
-                      "lat":"",
-                      "zoom":""
-                    },
-                    "social":[
-                      {
-                        "site":"",
-                        "url":""
-                      }
-                    ],
-                    "hotels":{
-                      "rating":{
-                        "5":[
-                          {
-                            "id":"",
-                            "name":"",
-                            "address":"",
-                            "postCode":"",
-                            "telephone":"",
-                            "web":{
-                              "email":"",
-                              "website":""
-                            },
-                            "description":"",
-                            "images":[
-                              {
-                                "url":"",
-                                "alt":"",
-                                "default":true
-                              }
-                            ],
-                            "services":[],
-                            "promote":false,
-                            "amenities":[],
-                            "pricing":[
-                              {
-                                "roomID":"",
-                                "roomType":"",
-                                "occupancy":"",
-                                "bed":[
-                                  {
-                                    "bedType":"King",
-                                    "count":1
-                                  }
-                                ],
-                                "extraAmenities":[],
-                                "cost":[
-                                  {
-                                    "dateStart":"",
-                                    "dateEnd":"",
-                                    "price":"",
-                                    "minStay":"",
-                                    "maxStat":false
-                                  }
-                                ],
-                                "conditions":""
-                              }
-                            ],
-                            "value":3
-                          }
-                        ],
-                        "4":[
-
-                        ],
-                        "3":[
-
-                        ],
-                        "2":[
-
-                        ],
-                        "1":[
-
-                        ]
-                      }
-                    },
-                    "restaurants": {
-                      "rating": {
-                        "5":[
-                          {
-                            "id":"",
-                            "name":"",
-                            "address":"",
-                            "postCode":"",
-                            "telephone":"",
-                            "web":{
-                              "email":"",
-                              "website":"",
-                              "reservation":"url"
-                            },
-                            "hours":[
-                              {
-                                "mon-fri":{
-                                  "open":"",
-                                  "close":""
-                                },
-                                "sat":{
-                                  "open":"",
-                                  "close":""
-                                },
-                                "sun":{
-                                  "open":"",
-                                  "close":""
-                                }
-                              }
-                            ],
-                            "style":[],
-                            "neighbourhood":"",
-                            "description":"",
-                            "images":[
-                              {
-                                "url":"",
-                                "alt":"",
-                                "default":true
-                              }
-                            ],
-                            "services":[],
-                            "menu":"",
-                            "promote":false,
-                            "value":3
-                          }
-                        ]
-                      }
-                    }
-                  }
-                ]
-              }
-            }
-          ]
+    "updated": "28/05/2017 8:58:00 EST",
+    "live": true,
+    "countries": {
+      "canada": {
+        "id": "CA199044",
+        "title": "Canada",
+        "description": "Land of the free",
+        "keywords": [
+          "nature"
+        ],
+        "country": "Canada",
+        "continent": "North America",
+        "mapping": {
+          "long": "",
+          "lat": "",
+          "zoom": ""
         },
-        {
-          "id":"CA199044",
-          "title":"United States Of America",
-          "description":"Home of Trump and all that is unholy",
-          "keywords":["polution"],
-          "country":"USA",
-          "continent":"North America",
-          "mapping":{
-            "long":"",
-            "lat":"",
-            "zoom":""
-          },
-          "reference":{
-            "wikipedia":""
-          },
-          "images":[
-            {
-              "url":"",
-              "alt":"",
-              "default":true
-            }
-          ],
-          "videos":[
-            {
-              "url":"",
-              "format":"",
-              "playhead":{
-                "start":"",
-                "end":""
-              },
-              "default":true
-            }
-          ],
-          "region":[
-            {
-              "District of Columbia":{
-                "description":"Where Donald lives",
-                "cities":[
+        "reference": {
+          "wikipedia": ""
+        },
+        "images": [
+          {
+            "url": "",
+            "alt": "",
+            "default": true
+          }
+        ],
+        "videos": [
+          {
+            "url": "",
+            "format": "",
+            "playhead": {
+              "start": "",
+              "end": ""
+            },
+            "default": true
+          }
+        ],
+        "regions": {
+          "Manitoba":{},
+          "Quebec":{},
+          "Ontario": {
+            "description": "The green province",
+            "cities": {
+              "Toronto":{},
+              "Ottawa": {
+                "cityID": "OT13354",
+                "promote": true,
+                "description": "Canada's most beautiful gem",
+                "keywords": [
+                  "capital"
+                ],
+                "website": "",
+                "mapping": {
+                  "long": "",
+                  "lat": "",
+                  "zoom": ""
+                },
+                "social": [
                   {
-                    "cityID":"OT13354",
-                    "promote":false,
-                    "name":"Washington",
-                    "description":"Where crime is our way of life",
-                    "keywords":["capital"],
-                    "website":"",
-                    "mapping":{
-                      "long":"",
-                      "lat":"",
-                      "zoom":""
-                    },
-                    "social":[
+                    "site": "",
+                    "url": ""
+                  }
+                ],
+                "hotels": {
+                  "rating": {
+                    "5": [
                       {
-                        "site":"",
-                        "url":""
+                        "id": "",
+                        "name": "The Royal Prick",
+                        "address": "1456 Laurier",
+                        "postCode": "K12",
+                        "telephone": "613-789-5647",
+                        "web": {
+                          "email": "",
+                          "website": ""
+                        },
+                        "description": "Such an awesome place",
+                        "images": [
+                          {
+                            "url": "",
+                            "alt": "",
+                            "default": true
+                          }
+                        ],
+                        "services": [],
+                        "promote": false,
+                        "amenities": [],
+                        "pricing": [
+                          {
+                            "roomID": "",
+                            "roomType": "",
+                            "occupancy": "",
+                            "bed": [
+                              {
+                                "bedType": "King",
+                                "count": 1
+                              }
+                            ],
+                            "extraAmenities": [],
+                            "cost": [
+                              {
+                                "dateStart": "",
+                                "dateEnd": "",
+                                "price": "",
+                                "minStay": "",
+                                "maxStat": false
+                              }
+                            ],
+                            "conditions": ""
+                          }
+                        ],
+                        "value": 3
                       }
                     ],
-                    "hotels":{
-                      "rating":{
-                        "5":[
-                          {
-                            "id":"",
-                            "name":"",
-                            "address":"",
-                            "postCode":"",
-                            "telephone":"",
-                            "web":{
-                              "email":"",
-                              "website":""
-                            },
-                            "description":"",
-                            "images":[
-                              {
-                                "url":"",
-                                "alt":"",
-                                "default":true
-                              }
-                            ],
-                            "services":[],
-                            "promote":false,
-                            "amenities":[],
-                            "pricing":[
-                              {
-                                "roomID":"",
-                                "roomType":"",
-                                "occupancy":"",
-                                "bed":[
-                                  {
-                                    "bedType":"King",
-                                    "count":1
-                                  }
-                                ],
-                                "extraAmenities":[],
-                                "cost":[
-                                  {
-                                    "dateStart":"",
-                                    "dateEnd":"",
-                                    "price":"",
-                                    "minStay":"",
-                                    "maxStat":false
-                                  }
-                                ],
-                                "conditions":""
-                              }
-                            ],
-                            "value":3
-                          }
-                        ],
-                        "4":[
-
-                        ],
-                        "3":[
-
-                        ],
-                        "2":[
-
-                        ],
-                        "1":[
-
-                        ]
-                      }
-                    },
-                    "restaurants": {
-                      "rating": {
-                        "5":[
-                          {
-                            "id":"",
-                            "name":"",
-                            "address":"",
-                            "postCode":"",
-                            "telephone":"",
-                            "web":{
-                              "email":"",
-                              "website":"",
-                              "reservation":"url"
-                            },
-                            "hours":[
-                              {
-                                "mon-fri":{
-                                  "open":"",
-                                  "close":""
-                                },
-                                "sat":{
-                                  "open":"",
-                                  "close":""
-                                },
-                                "sun":{
-                                  "open":"",
-                                  "close":""
-                                }
-                              }
-                            ],
-                            "style":[],
-                            "neighbourhood":"",
-                            "description":"",
-                            "images":[
-                              {
-                                "url":"",
-                                "alt":"",
-                                "default":true
-                              }
-                            ],
-                            "services":[],
-                            "menu":"",
-                            "promote":false,
-                            "value":3
-                          }
-                        ]
-                      }
-                    }
+                    "4": [
+                    ],
+                    "3": [
+                    ],
+                    "2": [
+                    ],
+                    "1": [
+                    ]
                   }
-                ]
+                },
+                "restaurants": {
+                  "rating": {
+                    "5": [
+                      {
+                        "id": "",
+                        "name": "",
+                        "address": "",
+                        "postCode": "",
+                        "telephone": "",
+                        "web": {
+                          "email": "",
+                          "website": "",
+                          "reservation": "url"
+                        },
+                        "hours": [
+                          {
+                            "mon-fri": {
+                              "open": "",
+                              "close": ""
+                            },
+                            "sat": {
+                              "open": "",
+                              "close": ""
+                            },
+                            "sun": {
+                              "open": "",
+                              "close": ""
+                            }
+                          }
+                        ],
+                        "style": [],
+                        "neighbourhood": "",
+                        "description": "",
+                        "images": [
+                          {
+                            "url": "",
+                            "alt": "",
+                            "default": true
+                          }
+                        ],
+                        "services": [],
+                        "menu": "",
+                        "promote": false,
+                        "value": 3
+                      }
+                    ]
+                  }
+                }
               }
             }
-          ]
+          }
         }
-      ]
+      },
+      "USA": {
+        "id": "CA199044",
+        "title": "United States Of America",
+        "description": "Home of Trump and all that is unholy",
+        "keywords": [
+          "polution"
+        ],
+        "country": "USA",
+        "continent": "North America",
+        "mapping": {
+          "long": "",
+          "lat": "",
+          "zoom": ""
+        },
+        "reference": {
+          "wikipedia": ""
+        },
+        "images": [
+          {
+            "url": "",
+            "alt": "",
+            "default": true
+          }
+        ],
+        "videos": [
+          {
+            "url": "",
+            "format": "",
+            "playhead": {
+              "start": "",
+              "end": ""
+            },
+            "default": true
+          }
+        ],
+        "regions": {
+          "District of Columbia": {
+            "description": "Where Donald lives",
+            "cities": {
+              "Washington": {
+                "cityID": "OT13354",
+                "promote": false,
+                "name": "Washington",
+                "description": "Where crime is our way of life",
+                "keywords": [
+                  "capital"
+                ],
+                "website": "",
+                "mapping": {
+                  "long": "",
+                  "lat": "",
+                  "zoom": ""
+                },
+                "social": [
+                  {
+                    "site": "",
+                    "url": ""
+                  }
+                ],
+                "hotels": {
+                  "rating": {
+                    "5": [
+                      {
+                        "id": "",
+                        "name": "",
+                        "address": "",
+                        "postCode": "",
+                        "telephone": "",
+                        "web": {
+                          "email": "",
+                          "website": ""
+                        },
+                        "description": "",
+                        "images": [
+                          {
+                            "url": "",
+                            "alt": "",
+                            "default": true
+                          }
+                        ],
+                        "services": [],
+                        "promote": false,
+                        "amenities": [],
+                        "pricing": [
+                          {
+                            "roomID": "",
+                            "roomType": "",
+                            "occupancy": "",
+                            "bed": [
+                              {
+                                "bedType": "King",
+                                "count": 1
+                              }
+                            ],
+                            "extraAmenities": [],
+                            "cost": [
+                              {
+                                "dateStart": "",
+                                "dateEnd": "",
+                                "price": "",
+                                "minStay": "",
+                                "maxStat": false
+                              }
+                            ],
+                            "conditions": ""
+                          }
+                        ],
+                        "value": 3
+                      }
+                    ],
+                    "4": [
+                    ],
+                    "3": [
+                    ],
+                    "2": [
+                    ],
+                    "1": [
+                    ]
+                  }
+                },
+                "restaurants": {
+                  "rating": {
+                    "5": [
+                      {
+                        "id": "",
+                        "name": "",
+                        "address": "",
+                        "postCode": "",
+                        "telephone": "",
+                        "web": {
+                          "email": "",
+                          "website": "",
+                          "reservation": "url"
+                        },
+                        "hours": [
+                          {
+                            "mon-fri": {
+                              "open": "",
+                              "close": ""
+                            },
+                            "sat": {
+                              "open": "",
+                              "close": ""
+                            },
+                            "sun": {
+                              "open": "",
+                              "close": ""
+                            }
+                          }
+                        ],
+                        "style": [],
+                        "neighbourhood": "",
+                        "description": "",
+                        "images": [
+                          {
+                            "url": "",
+                            "alt": "",
+                            "default": true
+                          }
+                        ],
+                        "services": [],
+                        "menu": "",
+                        "promote": false,
+                        "value": 3
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

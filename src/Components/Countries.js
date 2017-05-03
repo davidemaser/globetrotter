@@ -14,11 +14,11 @@ class Countries extends Component{
     }
 
     buildCountryLayout(){
-        let dataList = this.state.data[this.state.view];
+        let dataList = this.state.data;
         let d;
         let dataArray = [];
         for(d in dataList){
-            let objRegion = dataList[d].region;
+            let objRegion = dataList[d].regions;
             dataArray.push(<div key={d}  className="country-block">
                 <h1>{dataList[d].title}</h1>
                 <p>{dataList[d].description}</p>
@@ -26,7 +26,7 @@ class Countries extends Component{
             </div>)
         }
 
-        return dataArray;
+        return dataArray.sort();
 
     }
 

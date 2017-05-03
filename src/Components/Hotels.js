@@ -13,6 +13,7 @@ class Hotels extends Component{
     }
 
     static getHotelInformation(obj){
+        console.log(obj);
         let hotels = obj;
         let h;
         let hotelArray = [];
@@ -46,7 +47,6 @@ class Hotels extends Component{
     }
 
     render(){
-
         return(
             <div className="hotels-block">
                 {this.getHotelsByStars()}
