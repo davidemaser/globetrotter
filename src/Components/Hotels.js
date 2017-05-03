@@ -12,7 +12,7 @@ class Hotels extends Component{
         }
     }
 
-    getHotelInformation(obj){
+    static getHotelInformation(obj){
         let hotels = obj;
         let h;
         let hotelArray = [];
@@ -36,7 +36,7 @@ class Hotels extends Component{
                 <div key={s}>
                     <div className="star-rating-header" key={s}>{stars[s]} Stars</div>
                     <div className="hotels-corresponding" data-star-count={stars[s]}>
-                        {this.getHotelInformation(this.state.data.rating[stars[s]])}
+                        {Hotels.getHotelInformation(this.state.data.rating[stars[s]])}
                         </div>
                 </div>
             )
