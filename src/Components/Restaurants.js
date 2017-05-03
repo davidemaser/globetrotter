@@ -37,7 +37,7 @@ class Restaurants extends Component{
             if(this.state.data.rating[stars[s]].length > 0) {
                 starArray.push(
                     <div key={s}>
-                        <div className="star-rating-header" key={s}>{stars[s]} Stars</div>
+                        <div className={`star-rating-header ${stars[s]}stars`} key={s}>{stars[s]} Stars</div>
                         <div className="restaurants-corresponding" data-star-count={stars[s]}>
                             {this.state.data.rating[stars[s]].length > 0 ?
                                 Restaurants.getRestaurantInformation(this.state.data.rating[stars[s]]) :
