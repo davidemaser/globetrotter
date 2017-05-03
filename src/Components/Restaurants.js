@@ -2,9 +2,9 @@
  * Created by David Maser on 03/05/2017.
  */
 import React,{Component} from 'react';
-import HotelCard from "./Views/HotelCard";
+import RestaurantCard from "./Views/RestaurantCard";
 
-class Hotels extends Component{
+class Restaurants extends Component{
     constructor(props){
         super(props);
         this.state={
@@ -12,15 +12,15 @@ class Hotels extends Component{
         }
     }
 
-    static getHotelInformation(obj){
+    static getRestaurantInformation(obj){
         let hotels = obj;
         let h;
         let hotelArray = [];
         if(obj.length > 0) {
             for (h in hotels) {
                 hotelArray.push(
-                    <div key={h} className="hotel-block">
-                        <HotelCard data={hotels[h]}/>
+                    <div key={h} className="restaurant-block">
+                        <RestaurantCard data={hotels[h]}/>
                     </div>
                 )
             }
@@ -29,7 +29,7 @@ class Hotels extends Component{
         return hotelArray;
     }
 
-    getHotelsByStars(){
+    getRestaurantsByStars(){
         let stars = Object.keys(this.state.data.rating);
         let s;
         let starArray = [];
@@ -38,9 +38,9 @@ class Hotels extends Component{
                 starArray.push(
                     <div key={s}>
                         <div className="star-rating-header" key={s}>{stars[s]} Stars</div>
-                        <div className="hotels-corresponding" data-star-count={stars[s]}>
+                        <div className="restaurants-corresponding" data-star-count={stars[s]}>
                             {this.state.data.rating[stars[s]].length > 0 ?
-                                Hotels.getHotelInformation(this.state.data.rating[stars[s]]) :
+                                Restaurants.getRestaurantInformation(this.state.data.rating[stars[s]]) :
                                 ''
                             }
                         </div>
@@ -54,11 +54,11 @@ class Hotels extends Component{
 
     render(){
         return(
-            <div className="hotels-block">
-                {this.getHotelsByStars()}
+            <div className="restaurant-block">
+                {this.getRestaurantsByStars()}
             </div>
         )
     }
 }
 
-export default Hotels;
+export default Restaurants;

@@ -3,6 +3,7 @@
  */
 import React,{Component} from 'react';
 import Hotels from "./Hotels";
+import Restaurants from "./Restaurants";
 
 class Cities extends Component{
     constructor(props){
@@ -24,6 +25,10 @@ class Cities extends Component{
                         <div className="city-description">{cities[c].description}</div>
                         {cities[c].hotels !== undefined ?
                             <Hotels data={cities[c].hotels}/> :
+                            ''
+                        }
+                        {cities[c].restaurants !== undefined ?
+                            <Restaurants data={cities[c].restaurants}/> :
                             ''
                         }
                     </div>
