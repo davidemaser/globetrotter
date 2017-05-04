@@ -8,8 +8,15 @@ class ImageDisplay extends Component{
         super(props);
         this.state={
             data:this.props.data,
-            type:this.props.type
-        }
+            type:this.props.type,
+            display:'min'
+        };
+
+        this.repositionImageView = this.repositionImageView.bind(this);
+    }
+
+    repositionImageView(){
+        this.state.display === 'min' ? this.setState({display:'max'}) : this.setState({display:'min'});
     }
 
     renderThumbnailItems(obj){
@@ -37,7 +44,7 @@ class ImageDisplay extends Component{
             };
             imageArray.push(
                 images[i].default === true ?
-                <div className={this.state.type+`-image-block`} style={style}></div>:''
+                <div className={this.state.type+`-image-block`} style={style}> </div>:''
             )
         }
 
@@ -62,7 +69,7 @@ class ImageDisplay extends Component{
 
     render(){
         return(
-            <div className={this.state.type+`-image-view`}>
+            <div className={this.state.type+`-image-view `+this.state.display} onClick={this.repositionImageView}>
                 {this.renderImageView()}
                 <div className={this.state.type+`-image-thumbs`}>
                 {this.renderThumbView()}

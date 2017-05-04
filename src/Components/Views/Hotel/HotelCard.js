@@ -23,6 +23,7 @@ class HotelCard extends Component{
         console.log(view);
         return(
             <div className="hotel-card">
+                <ImageDisplay type="hotel" data={view.images} />
                 <div className="hotel-card-scrollable">
                     <div className="hotel-card-header">
                         <h2>{view.name}</h2>
@@ -39,7 +40,6 @@ class HotelCard extends Component{
                     <div className="hotel-card-pricing"><HotelPricing data={pricing} /></div>
                 </div>
                 </div>
-                <ImageDisplay type="hotel" data={view.images} />
             </div>
         )
     }
