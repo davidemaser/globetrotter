@@ -23,16 +23,10 @@ class HotelCard extends Component{
         console.log(view);
         return(
             <div className="hotel-card">
-
-                <div className="hotel-card-left">
-                    <HotelImages data={view.images} />
-                </div>
-                <div className="hotel-card-right">
                     <div className="hotel-card-header">
                         <h2>{view.name}</h2>
                     </div>
                     <p>{view.description}</p>
-                </div>
                 <div className="hotel-card-footer">
                     <div className="hotel-card-details">
                         <div className="detail-view-block">{view.address}</div>
@@ -43,6 +37,7 @@ class HotelCard extends Component{
                     <div className="hotel-card-amenities"><HotelAmenities data={amenities} /></div>
                     <div className="hotel-card-pricing"><HotelPricing data={pricing} /></div>
                 </div>
+                <HotelImages data={view.images} />
             </div>
         )
     }

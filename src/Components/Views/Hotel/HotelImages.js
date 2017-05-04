@@ -16,12 +16,18 @@ class HotelImages extends Component{
         let i;
         let imageArray = [];
         for(i in images){
+            let style = {
+                color:'#fff',
+                backgroundImage:`url(${images[i].url})`
+            };
             imageArray.push(
-                <div className="hotel-image-block">
-                    <img src={images[i].url} alt={images[i].alt} />
+                <div className="hotel-image-block" style={style}>
+
                 </div>
             )
         }
+
+        return imageArray;
     }
 
     render(){
