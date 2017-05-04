@@ -3,11 +3,12 @@
  */
 import React,{Component} from 'react';
 
-class HotelImages extends Component{
+class ImageDisplay extends Component{
     constructor(props){
         super(props);
         this.state={
-            data:this.props.data
+            data:this.props.data,
+            type:this.props.type
         }
     }
 
@@ -17,7 +18,7 @@ class HotelImages extends Component{
                 backgroundImage:`url(${obj.url})`
             };
             thumbArray.push(
-                <div key={obj.alt} className="hotel-image-item" title={obj.alt} style={style}>
+                <div key={obj.alt} className={this.state.type+`-image-item`} title={obj.alt} style={style}>
                 </div>
             );
 
@@ -36,7 +37,7 @@ class HotelImages extends Component{
             };
             imageArray.push(
                 images[i].default === true ?
-                <div className="hotel-image-block" style={style}></div>:''
+                <div className={this.state.type+`-image-block`} style={style}></div>:''
             )
         }
 
@@ -61,9 +62,9 @@ class HotelImages extends Component{
 
     render(){
         return(
-            <div className="hotel-image-view">
+            <div className={this.state.type+`-image-view`}>
                 {this.renderImageView()}
-                <div className="hotel-image-thumbs">
+                <div className={this.state.type+`-image-thumbs`}>
                 {this.renderThumbView()}
                 </div>
             </div>
@@ -71,4 +72,4 @@ class HotelImages extends Component{
     }
 }
 
-export default HotelImages;
+export default ImageDisplay;

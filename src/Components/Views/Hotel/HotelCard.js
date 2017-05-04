@@ -2,10 +2,10 @@
  * Created by David Maser on 03/05/2017.
  */
 import React,{Component} from 'react';
-import HotelImages from "./HotelImages";
 import HotelServices from "./HotelServices";
 import HotelAmenities from "./HotelAmenities";
 import HotelPricing from "./HotelPricing";
+import ImageDisplay from "../Images";
 
 class HotelCard extends Component{
     constructor(props){
@@ -39,7 +39,7 @@ class HotelCard extends Component{
                     <div className="hotel-card-pricing"><HotelPricing data={pricing} /></div>
                 </div>
                 </div>
-                <HotelImages data={view.images} />
+                <ImageDisplay type="hotel" data={view.images} />
             </div>
         )
     }

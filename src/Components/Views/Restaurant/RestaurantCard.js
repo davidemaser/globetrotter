@@ -2,7 +2,7 @@
  * Created by David Maser on 03/05/2017.
  */
 import React,{Component} from 'react';
-import RestaurantImages from "./RestaurantImages";
+import ImageDisplay from "../Images";
 
 class RestaurantCard extends Component{
     constructor(props){
@@ -32,7 +32,7 @@ class RestaurantCard extends Component{
                     <div className="restaurant-card-pricing">&nbsp;</div>
                 </div>
                 </div>
-                <RestaurantImages data={view.images} />
+                <ImageDisplay type="restaurant" data={view.images} />
             </div>
         )
     }
