@@ -13,7 +13,7 @@
   border-radius: 2px;
   display: inline-block;
   height: 300px;
-  overflow-y: auto;
+  overflow:hidden;
   margin: 1rem;
   position: relative;
   width: 400px;
@@ -25,10 +25,24 @@
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   &:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    .hotel-image-view{
+    .hotel-image-block{
       opacity:1;
     }
+    .hotel-image-item{
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    .hotel-image-thumbs{
+      bottom:1rem;
+    }
   }
+}
+
+.hotel-card-scrollable {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 999;
 }
 
 .hotel-card-header h2 {
@@ -50,12 +64,33 @@
   height: 100%;
   top: 1rem;
   left: 1rem;
-  opacity: 0.2;
-  transition:all 0.3s;
+  z-index: 56;
 }
 
 .hotel-image-block {
   width: 100%;
   height: 100%;
   background-size:cover;
+  opacity: 0.2;
+  transition:all 0.3s;
+}
+.hotel-image-thumbs {
+  position: absolute;
+  bottom:-5rem;
+  transition: bottom 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  width: 100%;
+  display: block;
+  height: 20%;
+}
+
+.hotel-image-item {
+  width: 20%;
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  display: inline-block;
+  margin-left: 1rem;
+  transition:all 0.3s;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  cursor: pointer;
 }

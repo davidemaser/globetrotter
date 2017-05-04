@@ -16,11 +16,11 @@ class RestaurantCard extends Component{
         let view = this.state.data;
         return(
             <div className="restaurant-card">
+                <div className="hotel-card-scrollable">
                     <div className="restaurant-card-header">
                         <h2>{view.name}</h2>
                     </div>
                     <p>{view.description}</p>
-
                 <div className="restaurant-card-footer">
                     <div className="restaurant-card-details">
                         <div className="detail-view-block">{view.address}</div>
@@ -30,6 +30,7 @@ class RestaurantCard extends Component{
                     <div className="restaurant-card-services">&nbsp;</div>
                     <div className="restaurant-card-amenities">&nbsp;</div>
                     <div className="restaurant-card-pricing">&nbsp;</div>
+                </div>
                 </div>
                 <RestaurantImages data={view.images} />
             </div>
