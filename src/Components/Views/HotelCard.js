@@ -3,6 +3,9 @@
  */
 import React,{Component} from 'react';
 import HotelImages from "./HotelImages";
+import HotelServices from "./HotelServices";
+import HotelAmenities from "./HotelAmenities";
+import HotelPricing from "./HotelPricing";
 
 class HotelCard extends Component{
     constructor(props){
@@ -14,6 +17,10 @@ class HotelCard extends Component{
 
     render(){
         let view = this.state.data;
+        let pricing = this.state.data.pricing;
+        let amenities = this.state.data.amenities;
+        let services = this.state.data.services;
+        console.log(view);
         return(
             <div className="hotel-card">
 
@@ -32,9 +39,9 @@ class HotelCard extends Component{
                         <div className="detail-view-block">{view.postCode}</div>
                         <div className="detail-view-block">{view.telephone}</div>
                     </div>
-                    <div className="hotel-card-services">&nbsp;</div>
-                    <div className="hotel-card-amenities">&nbsp;</div>
-                    <div className="hotel-card-pricing">&nbsp;</div>
+                    <div className="hotel-card-services"><HotelServices data={services}/></div>
+                    <div className="hotel-card-amenities"><HotelAmenities data={amenities} /></div>
+                    <div className="hotel-card-pricing"><HotelPricing data={pricing} /></div>
                 </div>
             </div>
         )
