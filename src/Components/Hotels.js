@@ -2,7 +2,7 @@
  * Created by David Maser on 03/05/2017.
  */
 import React,{Component} from 'react';
-import HotelCard from "./Views/HotelCard";
+import HotelCard from "./Views/Hotel/HotelCard";
 
 class Hotels extends Component{
     constructor(props){

@@ -2,7 +2,7 @@
  * Created by David Maser on 03/05/2017.
  */
 import React,{Component} from 'react';
-import RestaurantCard from "./Views/RestaurantCard";
+import RestaurantCard from "./Views/Restaurant/RestaurantCard";
 
 class Restaurants extends Component{
     constructor(props){
