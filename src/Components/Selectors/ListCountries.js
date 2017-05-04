@@ -22,9 +22,7 @@ class ListCountries extends Component{
         let list = this.state.data;
         let l;
         let listArray = [];
-        console.log(list);
         for(l in list){
-            console.log(list[l].region);
             listArray.push(<option value={list[l].country} key={l}>{list[l].country}</option>)
         }
 

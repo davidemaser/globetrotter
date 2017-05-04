@@ -6,7 +6,6 @@ import React,{Component} from 'react';
 class HotelPricingCost extends Component{
     render(){
         let pricingCostArray = [];
-        console.log(this.props.data);
         for(let p in this.props.data){
             pricingCostArray.push(
                 <div key={p} className="room-pricing-cost">

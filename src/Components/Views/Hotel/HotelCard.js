@@ -20,7 +20,6 @@ class HotelCard extends Component{
         let pricing = this.state.data.pricing;
         let amenities = this.state.data.amenities;
         let services = this.state.data.services;
-        console.log(view);
         return(
             <div className="hotel-card">
                 <ImageDisplay type="hotel" data={view.images} />
