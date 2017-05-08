@@ -44,7 +44,7 @@ class ImageDisplay extends Component{
             };
             imageArray.push(
                 images[i].default === true ?
-                <div className={this.state.type+`-image-block`} style={style}> </div>:''
+                <div key={i} className={this.state.type+`-image-block`} style={style}> </div>:''
             )
         }
 

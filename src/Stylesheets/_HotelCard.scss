@@ -17,7 +17,7 @@
   margin: 1rem;
   position: relative;
   width: 400px;
-  padding: 1rem;
+  padding: 1rem 0;
   *> h2 {
     margin: 0;
   }
@@ -25,17 +25,23 @@
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   &:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-
+  }
+  .hidden{
+    display: none;
+  }
+  .visible{
+    display: block;
   }
 }
 
 .hotel-card-scrollable {
   position: relative;
-  width: 100%;
+  display:block;
   height: 70%;
   overflow-y: auto;
   z-index: 999;
   top:30%;
+  padding:0 1rem;
 }
 
 .hotel-card-header h2 {
